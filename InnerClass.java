@@ -1,4 +1,4 @@
-class Jclass {
+class InnerClass {
     private static int studentNum;
     private Student[] stdList;
     private final int MAX_STD_NUM = 10;
@@ -13,8 +13,8 @@ class Jclass {
         }
     }
 
-    boolean addStudent (String argStdName) {
-        if(studentNum == MAX_STD_NUM)
+    boolean addStudent(String argStdName) {
+        if (studentNum == MAX_STD_NUM)
             return false;
 
         stdList[studentNum - 1] = new Student("Siyeon Park");
